@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> ข้อมูลสุขภาพ : (Checkbox) </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label>ดื่มสุรา</ion-label>
+      <ion-checkbox [(ngModel)]="drink"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>สูบบุหรี่</ion-label>
+      <ion-checkbox [(ngModel)]="smoke"></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>มีโรคประจำตัว</ion-label>
+      <ion-checkbox [(ngModel)]="diseases"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block outline (click)="handleClickSaveButton()">
+    บันทึก
+  </button>
+</ion-content>

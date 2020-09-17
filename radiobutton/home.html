@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      เพศ : RadioButton
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list radio-group [(ngModel)]="sex">
+    <ion-item>
+      <ion-label>ชาย</ion-label>
+      <ion-radio value="male" checked></ion-radio>
+    </ion-item>
+    <ion-item>
+      <ion-label>หญิง</ion-label>
+      <ion-radio value="female"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block outline (click)="handleClickSaveButton()">
+    บันทึก
+  </button>
+</ion-content>
